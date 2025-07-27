@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jigden Shakya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>    
+      html {
+        scroll-behavior: smooth;
+      }
+      body, h1, h2, h3, h4, h5, h6, p, a, ul, li, span, div, button {
+        font-family: 'Recursive', sans-serif !important;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="relative w-full h-20">
+    <!-- Logo -->
+    <img src="https://avatars.githubusercontent.com/u/100051118?s=200"
+         alt="Logo"
+         class="absolute top-5 left-8 h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 transition-all duration-200" />
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-4 absolute top-5 right-8">
+      <a href="public/Resume.pdf" download class="text-md font-medium text-gray-900 hover:text-[#6E07F3] transition">
+        Resume
+      </a>
+      <a href="contact.html" class="px-4 py-2 rounded-full text-md font-medium transition bg-white text-[#6E07F3] border border-[#6E07F3] hover:bg-[#6E07F3] hover:text-white hover:border-[#6E07F3]">
+        Contact Me
+      </a>
+    </nav>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="md:hidden absolute top-5 right-8">
+      <button id="menuToggle" class="text-gray-600 focus:outline-none">
+        <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden flex flex-col items-center gap-4 py-4 text-center">
+      <a href="public/Resume.pdf" download class="text-md font-medium text-gray-900 hover:text-[#6E07F3] transition">
+        Resume
+      </a>
+      <a href="contact.html" class="px-4 py-2 rounded-full text-md font-medium transition bg-white text-[#6E07F3] border border-[#6E07F3] hover:bg-[#6E07F3] hover:text-white hover:border-[#6E07F3]">
+        Contact Me
+      </a>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center text-center px-4 mb-0 pt-12">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+        Designer, Frontend Developer, Backend Developer & AI Enthusiast
+      </h1>
+      <p class="text-xl text-gray-700 mt-4 max-w-2xl">
+        I design and code beautifully simple things, and I love what I do.
+      </p>
+
+      <!-- Avatar -->
+      <div class="mt-16 mb-24">
+        <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="Avatar" class="w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 rounded-full transition-all duration-200" />
+      </div>
+
+      <!-- Illustration -->
+      <div class="mt-16 px-4 mb-0">
+        <img src="https://mattfarley.ca/img/hero-devices.svg" alt="Illustration" class="w-full max-w-4xl" />
+      </div>
+    </main>
+
+      <!-- About Section & Cards -->
+      <header class="bg-[#730DF3] text-white text-center py-28 sm:py-28 px-4 md:py-36 px-4 w-full mt-0 min-h-[400px] sm:min-h-[500px] md:min-h-[550px] flex flex-col justify-center">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+          Hi, I'm Jigden. Nice to meet you.
+        </h1>
+        <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed">
+          I'm a second-year Software Engineering student at the College of Science and Technology with a passion for coding and building real-world solutions. I enjoy working on both frontend and backend development, exploring AI, and constantly improving my skills through projects and collaboration. I'm eager to grow as a developer and create impactful digital experiences.
+        </p>
+      </header>
+
+      <!-- Cards Container -->
+      <section class="max-w-7xl mx-auto px-6 -mt-24 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 
+                    bg-white rounded-2xl shadow-[0_8px_40px_0_rgba(80,80,120,0.18)] 
+                    border border-gray-200
+                    p-0 sm:p-0
+                    divide-y md:divide-y-0 md:divide-x divide-[#e5e7eb] min-h-[700px]">
+          <!-- Card 1 -->
+          <div class="text-center flex flex-col items-center px-4 py-10">
+            <div class="bg-[#62eac0] p-4 rounded-full mb-6">
+              <img src="https://img.icons8.com/ios-filled/50/developer.png" class="h-6 w-6" alt="Frontend" />
+            </div>
+            <h2 class="text-xl font-bold mb-6 text-gray-900">Frontend Developer</h2>
+            <p class="text-md text-gray-800 mb-10 text-center">
+              I value clean code, user-focused design, responsiveness, performance, and seamless, accessible user experiences
+            </p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Things I enjoy designing:</p>
+            <p class="mb-10">UX, UI, Web, Apps</p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Dev Tools:</p>
+            <ul class="text-md text-gray-800 space-y-2">
+              <li>Figma</li>
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>HTML</li>
+              <li>npm</li>
+              <li>Vite</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>  
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="text-center flex flex-col items-center px-4 py-10">
+            <div class="bg-[#62eac0] p-4 rounded-full mb-6">
+              <img src="https://img.icons8.com/ios-filled/50/source-code.png" class="h-6 w-6" alt="Backend" />
+            </div>
+            <h2 class="text-xl font-bold mb-6 text-gray-900">Backend Developer</h2>
+            <p class="text-md text-gray-800 mb-10 text-center">
+              I build scalable, secure APIs, manage databases, and ensure efficient server-side performance.
+            </p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Languages I speak:</p>
+            <p class="mb-10">JavaScript (Node.js), Python</p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Dev Tools:</p>
+            <ul class="text-md text-gray-800 space-y-2">
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>npm</li>
+              <li>pip</li>
+              <li>Postman</li>
+              <li>PostgreSQL</li>
+              <li>JWT</li>
+              <li>Supabase</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="text-center flex flex-col items-center px-4 py-10">
+            <div class="bg-[#62eac0] p-4 rounded-full mb-6">
+              <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" class="h-6 w-6" alt="AI" />
+            </div>
+            <h2 class="text-xl font-bold mb-6 text-gray-900">AI Developer</h2>
+            <p class="text-md text-gray-800 mb-10 text-center">
+              I build intelligent models, optimize algorithms, and deliver scalable AI solutions with ethical considerations.
+            </p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Progress I have made:</p>
+            <p class="mb-10"> Built Mini Siri, trained CNN models</p>
+            <p class="text-[#6E07F3] font-semibold mb-2">Technical Stacks:</p>
+            <ul class="text-md text-gray-800 space-y-2">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>OpenCV</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li> Matplotlib</li>
+              <li>Google Colab</li>
+              <li>Jupyter Notebook</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS HEADER -->
+      <header class="max-w-full mx-auto px-4 mt-20 mb-20 text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">My Recent Projects</h2>
+        <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed">
+          Here are a few past projects I've worked on. Want to see more?
+          <a href="mailto:jigdenshakya@gmail.com" class="text-blue-600 hover:underline">Email me</a>.
+        </p>
+      </header>
+
+      <!-- PROJECTS SECTION -->
+      <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        
+        <!-- p1 -->
+        <div class="group relative w-full h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+          <div class="absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+            <img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5a7fbf15-9b3c-4ec9-a1f1-172ab715d4c5/apple-may-carry-wwdc-hey-siri-upgrade-plan-exposure.jpg?t=1720726375"
+              class="w-full h-full object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-[#0F1730] text-white flex flex-col items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl">
+            <p class="text-lg leading-relaxed mb-6">
+              Mini Siri<br>
+              Flask-Based Voice Assistant with Gemini AI.
+            </p>
+            <a href="https://github.com/Jigden18/Mini_Siri.git"
+              class="inline-block px-6 py-3 rounded-full border-2 border-[#6E07F3] text-white font-semibold transition-all duration-300 hover:bg-[#6E07F3]">
+              Explore Repository &rsaquo;
+            </a>
+          </div>
+        </div>
+
+        <!-- p2 -->
+        <div class="group relative w-full h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+          <div class="absolute inset-0 transition-opacity duration-700 group-hover:opacity-0">
+            <img src="https://vip-teaching.com/wp-content/uploads/2023/04/Duolingo-Character-Wordmark1.png"
+              class="w-full h-full object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-[#0F1730] text-white flex flex-col items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl">
+            <p class="text-lg leading-relaxed mb-6">
+              Duolingo-inspired language app<br>
+              with quizzes, progress tracking, and gamification.
+            </p>
+            <a href="https://github.com/Sonamdorji1904/Duolingo.git"
+              class="inline-block px-6 py-3 rounded-full border-2 border-[#6E07F3] text-white font-semibold transition-all duration-600 hover:bg-[#6E07F3]">
+              Explore Repository &rsaquo;
+            </a>
+          </div>
+        </div>
+
+        <!-- p3 -->
+        <div class="group relative w-full h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+          <div class="absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+            <img src="https://swashlaundrysoftware.com/wp-content/uploads/2023/05/laundry-imp-1.png"
+              class="w-full h-full object-cover rounded-2xl transform transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-[#0F1730] text-white flex flex-col items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl">
+            <p class="text-lg leading-relaxed mb-6">
+              Smart laundry database streamlining<br>
+              orders, tracking machines, managing users, automating tasks.
+            </p>
+            <a href="https://drive.google.com/drive/folders/11BNJZYxImHEKZ4kby7Tpp69Oy1NiI74i?usp=drive_link"
+              class="inline-block px-6 py-3 rounded-full border-2 border-[#6E07F3] text-white font-semibold transition-all duration-300 hover:bg-[#6E07F3]">
+              Explore Repository &rsaquo;
+            </a>
+          </div>
+        </div>
+   
+      </section>
+
+      <div class="text-center mt-20 mb-36">
+        <a href="https://github.com/jigden18"
+          target="_blank"
+          class="inline-flex items-center justify-center gap-2 p-4 rounded-full border-2 border-[#6E07F3] text-[#6E07F3] font-semibold transition-all duration-300 hover:bg-[#6E07F3] hover:text-white">
+          
+          <!-- GitHub Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5 transition-all duration-300">
+            <path d="M12 0C5.373 0 0 5.373 0 12a12.013 12.013 0 008.207 11.385c.6.11.793-.26.793-.577v-2.258c-3.338.726-4.042-1.612-4.042-1.612-.546-1.386-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.204.085 1.838 1.237 1.838 1.237 1.07 1.833 2.809 1.304 3.493.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.335-5.466-5.934 0-1.311.47-2.381 1.237-3.221-.125-.304-.536-1.532.118-3.194 0 0 1.008-.322 3.3 1.23a11.505 11.505 0 016.002 0c2.29-1.552 3.297-1.23 3.297-1.23.656 1.662.245 2.89.12 3.194.77.84 1.236 1.91 1.236 3.221 0 4.61-2.804 5.625-5.475 5.921.43.37.823 1.103.823 2.222v3.293c0 .32.19.694.8.576A12.013 12.013 0 0024 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+
+          See more on GitHub
+        </a>
+        
+      </div>
+
+      <footer class="bg-[#730DF3] text-white relative mt-60 pt-4 pb-10 px-4 sm:px-6 lg:px-8 ">
+        <!-- CTA box -->
+        <div class="max-w-7xl mx-auto -mt-36 bg-[#0E1321] p-8 sm:p-12 rounded-xl shadow-lg flex flex-col sm:flex-row justify-between items-center gap-6 text-center sm:text-left min-h-[300px] border-2 border-[#62eac0]">
+          <div>
+            <h2 class="text-2xl text-center sm:text-3xl font-bold text-white">Hire Me</h2>
+            <p class="text-sm leading-relaxed text-center sm:text-base text-white mt-6">
+              With a deep passion for solving problems through code and a strong foundation in both frontend and backend development, I bring a blend of creativity, technical skill, and dedication to every project. Whether it's building responsive user interfaces, designing full-stack applications, or integrating AI into modern web experiences, I thrive in environments that challenge me to learn and grow. My hands-on experience in real-world projects, attention to detail, and ability to quickly adapt to new technologies make me a valuable asset to any team. I’m not just looking for a job — I’m looking to contribute meaningfully, continuously improve, and help bring your company’s vision to life.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Main footer -->
+        <div class="text-center mt-20 pb-10">
+          <!-- Logo or personal mark -->
+          <div class="flex justify-center mb-6">
+            <div class="h-12 w-12 rounded-full bg-white shadow-lg flex items-center justify-center">
+              <img src="https://avatars.githubusercontent.com/u/100051118?s=200&v=4" alt="Logo" class="h-9 w-9 rounded-full">
+            </div>
+          </div>
+          <p class="text-lg sm:text-xl mb-8">Living, learning, & leveling up <br> one day at a time.</p>
+          
+          <!-- Social icons -->
+          <div class="flex justify-center gap-6 mt-6 mb-8">
+            <a href="https://www.facebook.com/jigden.sakya.9" class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#6E07F3] transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#6E07F3] transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/jigden18" class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#6E07F3] transition">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.figma.com/files/team/1400383919947095685/recents-and-sharing?fuid=1400383916228554178" class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#6E07F3] transition">
+              <i class="fab fa-figma"></i>
+            </a>
+            <a href="mailto:02240343.cst@rub.edu.bt" class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#6E07F3] transition">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Footer credits -->
+          <p class="text-sm mb-2">Handcrafted by me © <span class="font-semibold">twentytwentyfive</span></p>
+          <p class="text-sm">Made with genuine passion</p>
+        </div>
+      </footer>
+
+      
+    <!-- Script -->
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let isMenuOpen = false;
+
+      // SVG for cross icon
+      const crossSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      `;
+
+      // SVG for hamburger icon
+      const hamburgerSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      `;
+
+      menuToggle.addEventListener("click", () => {
+        isMenuOpen = !isMenuOpen;
+        mobileMenu.classList.toggle("hidden", !isMenuOpen);
+        menuToggle.innerHTML = isMenuOpen ? crossSVG : hamburgerSVG;
+      });
+    </script>
+  </body>
+</html>
